@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZheroTronics - Your IT Software and Hardware Experts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div id="scroll-progress"></div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ZheroTronics</div>
+            <div class="nav-toggle">☰</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <h1 class="glitch" data-text="ZheroTronics">ZheroTronics</h1>
+            <p class="motto" id="typed-motto"></p>
+            <div class="cta-buttons">
+                <a href="#services" class="btn neon-btn">Explore Services</a>
+                <a href="#contact" class="btn neon-btn">Get in Touch</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>At ZheroTronics, we pioneer cutting-edge solutions in IT software and hardware. Our team of experts is dedicated to transforming your technological vision into reality with innovative, reliable, and scalable systems.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">10+</span>
+                        <p>Years of Expertise</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">500+</span>
+                        <p>Projects Delivered</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">99%</span>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">💻</div>
+                    <h3>Software Development</h3>
+                    <p class="short-desc">Custom software solutions.</p>
+                    <div class="full-desc">
+                        <p>We design and develop bespoke software tailored to your business needs, ensuring scalability and performance.</p>
+                    </div>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">🖥️</div>
+                    <h3>Hardware Solutions</h3>
+                    <p class="short-desc">Advanced hardware integration.</p>
+                    <div class="full-desc">
+                        <p>From design to deployment, we optimize hardware systems for maximum efficiency and reliability.</p>
+                    </div>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">☁️</div>
+                    <h3>Cloud Services</h3>
+                    <p class="short-desc">Scalable cloud infrastructure.</p>
+                    <div class="full-desc">
+                        <p>Seamless cloud solutions with cutting-edge technology to support your business growth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <form id="contact-form" action="https://formspree.io/f/xzzdlnny" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" minlength="2" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" minlength="10" required></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                <button type="submit" class="btn neon-btn">Send Message</button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 ZheroTronics. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
