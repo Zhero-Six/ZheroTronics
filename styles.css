@@ -332,7 +332,7 @@ input:focus, textarea:focus {
 }
 
 input:invalid:not(:placeholder-shown), textarea:invalid:not(:placeholder-shown) {
-    border-color: #ff3333; /* Red for invalid input */
+    border-color: #ff3333;
 }
 
 textarea {
@@ -341,7 +341,7 @@ textarea {
 
 .error-message {
     font-size: 0.9rem;
-    color: #ff3333; /* Red for errors */
+    color: #ff3333;
     margin-top: 0.25rem;
     display: block;
     opacity: 0;
@@ -370,11 +370,43 @@ textarea {
 
 /* Footer */
 footer {
-    padding: 1rem;
+    padding: 0.5rem; /* Reduced from 1rem */
     text-align: center;
     background: rgba(26, 0, 51, 0.9);
     position: relative;
     z-index: 1;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-content p {
+    font-size: 0.9rem; /* Reduced from default */
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-evenly; /* Changed to space-evenly */
+    width: 60%; /* Adjusted for even spacing */
+    max-width: 400px; /* Keeps it compact */
+}
+
+.social-icon {
+    width: 20px; /* Slightly reduced from 24px */
+    height: 20px;
+    filter: invert(1) hue-rotate(180deg);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    filter: invert(1) hue-rotate(300deg);
 }
 
 /* Animations */
@@ -455,5 +487,15 @@ footer {
 
     .service-card:hover .full-desc {
         max-height: 150px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .social-links {
+        width: 100%;
+        padding: 0 1rem;
     }
 }

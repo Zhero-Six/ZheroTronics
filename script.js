@@ -101,7 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const messageInput = document.getElementById('message');
     const formMessage = document.getElementById('form-message');
 
-    // Real-time validation
     nameInput.addEventListener('input', () => validateField(nameInput, 'name-error', 'Name must be at least 2 characters'));
     emailInput.addEventListener('input', () => validateField(emailInput, 'email-error', 'Please enter a valid email'));
     messageInput.addEventListener('input', () => validateField(messageInput, 'message-error', 'Message must be at least 10 characters'));
@@ -121,9 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (form) {
         form.addEventListener('submit', async (e) => {
-            e.preventDefault(); // Keep this until Formspree is tested locally; remove for live submission
-
-            // Validate all fields before submission
             const isNameValid = validateField(nameInput, 'name-error', 'Name must be at least 2 characters');
             const isEmailValid = validateField(emailInput, 'email-error', 'Please enter a valid email');
             const isMessageValid = validateField(messageInput, 'message-error', 'Message must be at least 10 characters');
